@@ -1,0 +1,218 @@
+.homepage-container{
+    display: flex;
+    height: 120vh;
+    flex-direction:column;
+}
+
+.home-body{
+    display: flex;
+    flex: 5;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.home-fotter{
+    flex: 2;
+    padding: 0.25vh;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction:column;
+}
+
+.footer-up{
+    flex: 1;
+    background-color:#e2dddd;
+    text-align: center;
+    padding-top: 2.5vh;
+}
+.notice{
+   margin-right: 5vh;
+   font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.footer-down{
+    flex: 2;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.address{
+    font-size: 1.65vh;
+    flex-basis: 18%;
+    margin-right: 2vh;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.tel{
+    font-size: 1.65vh;
+    flex-basis: 10%;
+    margin-right: 0.5vh;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.copy-rights{
+    flex-basis: 70%;
+    margin-top: 7vh;
+    font-size: 1.5vh;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.main-content{
+    order:1;
+    flex: 4;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.ad-content{
+    order:2;
+    width: 10vh;
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.ad-sm{
+    margin: 1.5vh;
+    height: 10%;
+    padding: 0.5vh;
+}
+
+.ad-md{
+    margin: 1.5vh;
+    height: 20%;
+    padding: 0.25vh;
+}
+
+
+.ad-lg{
+    margin: 1.5vh;
+    height: 40%;
+    padding: 0.5vh;
+}
+
+.content-01{
+  
+    display: flex;
+    height: 57.25% ;
+    margin-left: 0.5vh;
+    background-image: url('https://mysliit-my.sharepoint.com/personal/it15116420_my_sliit_lk/_layouts/15/guestaccess.aspx?docid=1cfd8c0cb98a24d4a9f70db71aef98bc4&authkey=Ac65t5DICQh8LkbExbs5CSY&expiration=2018-01-24T08%3A52%3A26.000Z&e=085eedd2eccf45648b24979287835a40');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+}
+
+.content-div{
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    flex-basis: 75%;
+    background-color: rgba(228, 228, 228, 0.73);
+    padding: 3vh;
+    border-radius: 1vh;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+}
+
+.search-Fields{
+    flex: 1;
+    width: 100%;
+    margin: auto;
+}
+
+.search-Fields-title{
+    flex:2;
+    font-size: 4.5vh;
+    margin: auto;
+}
+
+.search-Fields-main{
+    flex: 2;
+    width: 100%;
+    margin: auto;
+    margin-top: -5%;
+}
+
+.search-Fields-button{
+    width:100%;
+    margin: auto;
+}
+
+.content-02{
+    display: flex;
+    flex-direction:column;
+    height: 37.5%;
+    margin-left: 0.5vh; 
+    padding: 0.5vh;
+    background-color:  rgb(204, 207, 216);
+}
+
+.social-meadia-facebook{
+    background-image: url('https://mysliit-my.sharepoint.com/personal/it15116420_my_sliit_lk/_layouts/15/guestaccess.aspx?docid=14800b4932396413f9d26b955976b899d&authkey=AZDCOl2ljGLss-E-uWyKv8Y&expiration=2018-01-24T08%3A44%3A42.000Z&e=9ee96a1c002145918fa67765a0dcb5f5');
+}
+
+.social-meadia-email{
+    background-image: url('https://mysliit-my.sharepoint.com/personal/it15116420_my_sliit_lk/_layouts/15/guestaccess.aspx?docid=1b344fcbeb7b2461ca36de0be50123444&authkey=AWqGagcnVPFgqsD5tASnIKA&expiration=2018-01-24T08%3A44%3A58.000Z&e=b5d4aa44b87b4a89ad9c29f44b60484a');
+}
+
+.social-meadia-twitter{
+    background-image: url('https://mysliit-my.sharepoint.com/personal/it15116420_my_sliit_lk/_layouts/15/guestaccess.aspx?docid=1ba3096a3e1e6480186593f0794e8e6e9&authkey=AfoujWA7TgqxCvAbJfExc6o&expiration=2018-01-24T08%3A45%3A13.000Z&e=f0f53fe645b2407d8c76aadefd9fe66f');
+}
+
+.icon-settings{
+    width: 6.75vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    margin-top: 1.5vh;
+    margin-right: 2vh;
+}
+
+.ad-image1{
+    background-image: url('https://mysliit-my.sharepoint.com/personal/it15116420_my_sliit_lk/_layouts/15/guestaccess.aspx?docid=121a9bc6b3d95416eba3bdc8e35b7c406&authkey=AQCMNRDT_-MmKXt3mwbB6es&expiration=2018-01-24T08%3A45%3A39.000Z&e=20a2d9c6b63b417f91771a946c2cd1ea');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ad-image2{
+    background-image: url('https://mysliit-my.sharepoint.com/personal/it15116420_my_sliit_lk/_layouts/15/guestaccess.aspx?docid=14493cb25782242fea62977e25d61bae8&authkey=AUxSRSuX6d-9dD3soTsVa6g&expiration=2018-01-24T08%3A45%3A57.000Z&e=376edcfd80e04f28888afa7702fc916a');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ad-image3{
+    background-image: url('https://mysliit-my.sharepoint.com/personal/it15116420_my_sliit_lk/_layouts/15/guestaccess.aspx?docid=1c43912fb90e14f3fab5b7e127b52cb36&authkey=AYsdQGSSjv_0lUj7PlFplrE&expiration=2018-01-24T08%3A46%3A18.000Z&e=067d1fd6cad44a26872daef9aebb4cdc');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ad-image4{
+    background-image: url('https://mysliit-my.sharepoint.com/personal/it15116420_my_sliit_lk/_layouts/15/guestaccess.aspx?docid=1488f2e5313bf48c9a12c32c022dc12f8&authkey=AQIvZxrRYC7fNsMb9Op6YLI&expiration=2018-01-24T08%3A46%3A33.000Z&e=de207f861f464696916555f5e708501d');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ad-content{
+    width: 100%;
+    height: 100%;
+}
+
+agm-map {
+    height: 100%;
+}
+.agm-map-container-inner { width: 50vh; height: 50vh; } 
+.agm-map-content { display:none; }
+
+.modal-content{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.selectpicker{
+   margin-top: 5%;
+   margin-bottom: 5%;
+   font-size: 2.5vh;
+}

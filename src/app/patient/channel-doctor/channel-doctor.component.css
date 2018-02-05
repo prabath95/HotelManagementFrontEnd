@@ -1,0 +1,19 @@
+.msg{
+    margin-bottom: -1vh;
+}
+
+.textbox{
+    margin-top: 2vh;
+}
+
+.buttonContainer{
+    margin-top: -3vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

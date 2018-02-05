@@ -1,0 +1,33 @@
+<div>
+  <h2 mat-dialog-title>Confirm Booking</h2>
+  <hr>
+  <mat-dialog-content class="body">
+    <mat-form-field class="search-Fields">
+      <input matInput placeholder="Doctor" disabled value="" [(ngModel)]="docName">
+    </mat-form-field>
+    <mat-form-field class="search-Fields">
+      <input matInput placeholder="Hospital" disabled value="" [(ngModel)]="hospital">
+    </mat-form-field>
+    <mat-form-field class="search-Fields">
+      <input matInput placeholder="Speciality" disabled value="" [(ngModel)]="specility">
+    </mat-form-field>
+    <mat-form-field class="search-Fields">
+      <input matInput placeholder="Date" disabled value="" [(ngModel)]="date">
+    </mat-form-field>
+    <mat-form-field class="search-Fields">
+      <input matInput placeholder="Appoinment Price" disabled value="Rs. 1500.00">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Select prefered time" required>
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{ food.viewValue }}
+        </mat-option> 
+      </mat-select>
+    </mat-form-field>
+  </mat-dialog-content>
+  <hr>
+  <mat-dialog-actions class="buttonContainer">
+    <button mat-raised-button (click)="onCloseConfirm()" [routerLink]="['/patient/payment']"  >Confirm</button>
+    <button mat-raised-button (click)="onCloseCancle()">Cancle</button>
+  </mat-dialog-actions>
+</div>

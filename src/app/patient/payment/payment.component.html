@@ -1,0 +1,47 @@
+<div class="homepage-container">
+  <div class="home-body">
+    <div class="main-content">
+      <mat-card class="content-02">
+          <h1>Enter Card Details to Make Payment</h1>
+        <mat-tab-group class="demo-tab-group">
+          <mat-tab label="Card Payment">
+            <div class="demo-tab-content demo-tab-content-color">
+              <div class="demo-tab-content">
+                <div class="card-data-row1">
+                  <mat-form-field class="cont1-card-type">
+                    <mat-select placeholder="Card Type" required>
+                      <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{ food.viewValue }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <div class="cont2"></div>
+                </div>
+                <div class="card-data-row2">
+                  <mat-form-field class="card-cont1">
+                    <input matInput placeholder="Card Number" value="" required maxlength="16" type="number">
+                    <mat-hint>Enter 16 digits</mat-hint>
+                  </mat-form-field>
+                  <mat-form-field class="card-cont2">
+                    <input matInput placeholder="Expiry date" value=" YYYY - MM " required maxlength="7">
+                  </mat-form-field>
+                  <mat-form-field class="card-cont3">
+                    <input matInput placeholder="CVC" value="" required maxlength="3" type="number">
+                    <mat-hint>Enter 3 digits</mat-hint>
+                  </mat-form-field>
+                </div>
+                <div class="card-data-row3">
+                  <button mat-raised-button color="primary" class="doPayment" (click)="openDialog()">Do Payment</button>
+                </div>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="Paypal" disabled>
+            <div class="demo-tab-content">
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card>
+    </div>
+  </div>
+</div>

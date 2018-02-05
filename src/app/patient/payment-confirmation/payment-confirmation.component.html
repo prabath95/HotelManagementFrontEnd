@@ -1,0 +1,20 @@
+<div>
+  <h2 mat-dialog-title>Confirmation</h2>
+  <hr>
+  <mat-dialog-content class="content">
+    <p class="msg">Enter Secret Code</p>
+    <small>(Secret code will send to you as SMS message)</small>
+    <br>
+    <mat-form-field class="textbox">
+      <input matInput placeholder="Enter Code" [(ngModel)]="smsCode" required >
+    </mat-form-field>
+    <small *ngIf="correctCode" style="color:red;">
+      Invalid <strong>Secret Number</strong>
+    </small>
+  </mat-dialog-content>
+  <hr>
+  <mat-dialog-actions class="buttonContainer">
+    <button mat-raised-button (click)="checkSMSCode();checkCode();" >Confirm</button>
+    <button mat-raised-button (click)="onCloseCancle()">Cancle</button>
+  </mat-dialog-actions>
+</div>

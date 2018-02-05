@@ -1,0 +1,62 @@
+<div class="homepage-container">
+  <div class="home-body">
+    <div class="main-content">
+      <mat-card class="content-01">
+        <div class="content-div">
+          <div class="search-Fields-title"> Channel Your Doctor</div>
+          <mat-form-field class="search-Fields-main" matTooltip="You Can search either form disease (eg :-Diabetic) or parts of body (eg:-Skin)"
+            matTooltipPosition="right">
+            <input matInput placeholder="Enter the Diseases " [matAutocomplete]="auto" [formControl]="stateCtrl" [(ngModel)]="diseases"
+              required>
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let state of filteredStates | async" [value]="state.name" (click)="doSearch()">
+                <img style="vertical-align:middle;" aria-hidden src="{{state.flag}}" height="25" />
+                <span>{{ state.name }}</span> |
+                <small>Speciality: {{state.speciality}}</small>
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+
+          <mat-form-field class="search-Fields">
+            <input matInput placeholder="Speciality" disabled value="" [(ngModel)]="specility">
+          </mat-form-field>
+
+          <mat-form-field class="search-Fields">
+            <mat-select placeholder="Doctor" [(ngModel)]="selectedDoctor" required>
+              <mat-option *ngFor="let food of doctor" [value]="food.value">
+                {{ food.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="search-Fields">
+            <mat-select placeholder="Hospital" [(ngModel)]="selectedHospital" required>
+              <mat-option *ngFor="let food of hospital" [value]="food.value">
+                {{ food.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field class="search-Fields">
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="date" required>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <button class="search-Fields-button" mat-raised-button color="primary" (click)="openDialog()">Next</button>
+        </div>
+      </mat-card>
+      <mat-card class="content-02"> 
+        <mat-form-field >
+          <input matInput placeholder="Location"  value="Virtusa Pvt Limited, Colombo" matTooltip="Hospitals will appear according to the location" matTooltipPosition="above">
+        </mat-form-field>
+        <agm-map [latitude]="location.lat" [longitude]="location.lng" *ngFor="let location of hospitals">
+          <agm-marker [latitude]="hospital.lat" [longitude]="hospital.lng" *ngFor="let hospital of location.hospitals"></agm-marker>
+        </agm-map>
+        <!-- <div id="map"></div> -->
+      </mat-card>
+    </div>
+    
+  </div>
+
+
+</div>

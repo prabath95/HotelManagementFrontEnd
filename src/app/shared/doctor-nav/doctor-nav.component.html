@@ -1,0 +1,24 @@
+<div class="main-container">
+  <app-header></app-header>
+<div class="content-container">
+
+  
+  <div class="content-area">
+    <router-outlet></router-outlet>
+  </div>
+  <clr-vertical-nav>
+    <a clrVerticalNavLink routerLink="./treetPatients" routerLinkActive="active">
+      <clr-icon clrVerticalNavIcon shape="home"></clr-icon>
+      View Channellings
+    </a>
+    <a clrVerticalNavLink routerLink="./viewPatients" routerLinkActive="active">
+      <clr-icon clrVerticalNavIcon shape="home"></clr-icon>
+      View Patients
+    </a>
+    <a clrVerticalNavLink routerLink="./progress" routerLinkActive="active">
+      <clr-icon clrVerticalNavIcon shape="users"></clr-icon>
+      View History
+    </a>
+  </clr-vertical-nav>
+</div>
+</div>

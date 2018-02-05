@@ -1,0 +1,183 @@
+.homepage-container{
+    display: flex;
+    height: 120vh;
+    flex-direction:column;
+}
+
+.home-body{
+    display: flex;
+    flex: 12;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.home-fotter{
+    flex: 2;
+    padding: 0.25vh;
+    display: flex;
+    flex-direction:column;
+}
+
+.footer-up{
+    flex: 1;
+    background-color:#e2dddd;
+    text-align: center;
+    padding-top: 2.5vh;
+}
+.notice{
+   margin-right: 5vh;
+   font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.footer-down{
+    flex: 2;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.address{
+    font-size: 1.65vh;
+    flex-basis: 18%;
+    margin-right: 2vh;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.tel{
+    font-size: 1.65vh;
+    flex-basis: 10%;
+    margin-right: 0.5vh;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.copy-rights{
+    flex-basis: 70%;
+    margin-top: 7vh;
+    font-size: 1.5vh;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.main-content{
+    order:1;
+    flex: 4;
+    display: flex;
+    flex-direction:column; 
+}
+
+.content-01{
+    flex: 1;
+    display: flex; 
+    background-color: #deebf5;
+}
+
+.content-02{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    background-size: cover;
+    background-repeat: no-repeat;    
+
+}
+
+.icon-settings{
+    width: 6.75vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    margin-top: 1.5vh;
+    margin-right: 2vh;
+}
+
+  
+.demo-tab-content {
+    width: 100%;
+    height: 39vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.demo-tab-content-color {
+    background-color: #eeeeee8a;
+}
+
+.data-row{
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-left: -5%;
+}
+
+.card-data-row1{
+    display: flex;
+    flex: 1;
+    margin-left: 0.2%;
+    margin-top: 2%;
+}
+
+.card-data-row2{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-left: 0.6%;
+}
+
+.card-data-row3{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    height: 55%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: 4%;
+}
+
+.data-row-gender{
+  display: flex;
+  justify-content:flex-start;
+  margin-top: 3%;
+}
+
+.lbl-gender{
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+.cont1{
+    flex-basis: 30%;
+}
+.cont2{
+  flex-basis: 30%;
+  margin-left: -5%;
+}
+
+.cont1-card-type{
+    flex-basis: 30%;
+    margin-left: 5%;
+}
+
+.card-cont1{
+    flex-basis: 30%;
+    margin-left: 0.5%;
+}
+
+.card-cont2{
+    flex-basis: 20%;
+}
+
+.card-cont3{
+    flex-basis: 5%;
+}
+
+.data-row-heding{
+    height: 6%;
+    display: flex;
+    margin-top: 1%;
+}
+.personal-details{
+    font-size: 5vh;
+    flex-basis: 20%;
+    margin-left: 5%; 
+}
+
+.doPayment{
+    margin-top: 1.5%;
+}

@@ -1,0 +1,20 @@
+<div class="main-container">
+  <app-header></app-header>
+<div class="content-container">
+
+  
+  <div class="content-area">
+    <router-outlet></router-outlet>
+  </div>
+  <clr-vertical-nav>
+    <a clrVerticalNavLink routerLink="./AddDoctor" routerLinkActive="active">
+      <clr-icon clrVerticalNavIcon shape="home"></clr-icon>
+      Add Doctors
+    </a>
+    <a clrVerticalNavLink routerLink="./removeDoctor" routerLinkActive="active">
+      <clr-icon clrVerticalNavIcon shape="users"></clr-icon>
+      Edit Doctors
+    </a>
+  </clr-vertical-nav>
+</div>
+</div>
