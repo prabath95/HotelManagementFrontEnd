@@ -9,6 +9,7 @@ import { HttpModule } from '@angular/http';
 import { routing } from '../app/Router';
 import { material } from '../app/material';
 
+import { LoginService } from "../app/services/login/login.service";
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -65,12 +66,14 @@ import { PaymentConfirmationComponent } from './patient/payment-confirmation/pay
     FormsModule,
     routing,
     material,
+    HttpModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBkemJdxr8iVfUR-CaQK2N8tmK2GqjVCmc'
     })
   ],
   providers: [
-    DatePipe
+    DatePipe,
+    LoginService
   ],
   bootstrap: [AppComponent],
   entryComponents: [
